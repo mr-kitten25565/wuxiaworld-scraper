@@ -1,5 +1,5 @@
 {
-  description = "Flake for the novel scraper (improved version)";
+  description = "DevShell for novel scraper";
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
@@ -7,17 +7,16 @@
     devShells.x86_64-linux.default = let
       pkgs = import nixpkgs { system = "x86_64-linux"; };
     in pkgs.mkShell {
-      nativeBuildInputs = [ pkgs.python311 ];
+      nativeBuildInputs = [ pkgs.python3 ];
       buildInputs = with pkgs; [
-        python311Packages.requests
-        python311Packages.beautifulsoup4
-        python311Packages.markdownify
+        python3Packages.requests
+        python3Packages.beautifulsoup4
+        python3Packages.markdownify
       ];
       shellHook = ''
         echo "=== Novel Scraper Development Shell ==="
-        echo "Run the scraper with:"
-        echo "  python stelling.py <website_url>"
-        echo "All required packages (requests, beautifulsoup4, markdownify) are available."
+        echo "Run scraper: python stelling.py <url> [--start N] [--end M] [--max N]"
+        ''
       '';
     };
   };
