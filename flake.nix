@@ -1,5 +1,5 @@
 {
-  description = "DevShell for novel scraper";
+  description = "Development shell for novel scraper";
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
