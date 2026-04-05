@@ -109,7 +109,7 @@ def next_link(chapter_number, total_chapters, title):
     next_num = chapter_number + 1
     # If we are at the last chapter we don't want a link – caller should guard.
     next_file = fileName(next_num)
-    return f"[[Novels/{title}/{next_file}|Next Chapter]]"
+    return f"[[novels/{title}/{next_file}|Next Chapter]]"
 
 # ----------------------------------------------------------------------
 # Determine the highest chapter number from the URL (or from a supplied arg)
