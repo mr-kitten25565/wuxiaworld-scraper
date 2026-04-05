@@ -1,7 +1,10 @@
 .venv
 *.zip
 *.html
+*.md
 env
 Circle*of*Inevitability
 LordOfTheMysteries
 OmniscientReadersViewpoint
+novels
+finished
