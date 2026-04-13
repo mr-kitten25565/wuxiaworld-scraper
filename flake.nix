@@ -20,7 +20,7 @@
         # Fetch script for app
         stellingScript = pkgs.fetchurl {
           url = "https://raw.githubusercontent.com/mr-kitten25565/wuxiaworld-scraper/refs/heads/main/stelling.py";
-          sha256 = "sha256-UZl6C+1imjBGeKPagdf4shqdEKRpz3zZ8Ww7GCglyIw=";
+          sha256 = "sha256-aq2PGJ2USB3jvmM6IUTjDuRfoVuXbNjC1Z02btfgwKc=";
         };
 
         runApp = pkgs.writeShellApplication {
